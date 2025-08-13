@@ -8,6 +8,16 @@ function sortear() {
         return;
     }
 
+    if (quantidade > (ate - de + 1) || quantidade <= 0) {
+        alert('A quantidade de números sorteados é invalida. Verifique se os valores estão corretos.');
+        return;
+    }
+
+    if (de < 0) {
+        alert('Os valores "Do número" devem ser positivos. Verifique se os valores estão corretos.');
+        return;
+    }
+
     let sorteados = [];
     let numero;
 
